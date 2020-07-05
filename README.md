@@ -27,9 +27,12 @@ Add the following to every html file
 ## Create a Service Worker file. 
 Create a sw.js file to be registered later.
 
-Service worker lifecycles:
+Service worker lifecycles & events:
 - Install
 - Activate
+- Fetch
+
+You need all three defined for Google to prompt users to download app as a PWA
 
 ## Register Service Workers
 You can register service workers in any JavaScript file (e.g. app.js) with the following
@@ -41,5 +44,5 @@ You can register service workers in any JavaScript file (e.g. app.js) with the f
 			.catch((err) => console.log("This callback runs when sw is not registered ", err));
 	}
 
-
+## Pre-Caching Assets
 
